@@ -2697,7 +2697,7 @@
       transform: "".concat(innerTranslate, " ").concat(innerScale, " ").concat(innerRotate)
     };
     var path = {
-      transform: "translate(".concat(iconWidth / 2 * -1, " -256)")
+      transform: "translate(".concat(iconWidth / 2 * -1, " -352)")
     };
     return {
       outer: outer,
