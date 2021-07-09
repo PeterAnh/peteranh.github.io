@@ -246,5 +246,23 @@
 				
 			</div><!--//main-wrapper-->
 </body>
+<script>
+	$("footer").hide();
+	$("#banner").hide();
+	$("article").bind('mouseover', function () {
+		var footer = $("footer");
+		if (footer.css("display") == "none") {
+			footer.show();
+			console.log("showing footer");
+		}
+	});
+	$("div.main-wrapper").bind('mouseover', function () {
+		var banner = $("#banner");
+		if (banner.css("display") == "none") {
+			banner.show();
+			console.log("showing banner");
+		}
+	});
+</script>
 </html> 
 
