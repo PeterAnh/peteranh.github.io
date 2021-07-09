@@ -13,7 +13,7 @@ namespace HtmlToPdf
     {
         static void Main(string[] args)
         {
-            string PATH = "./build/";
+            string PATH = "./";
             string FILENAME = "TuanAnhHoang_CV.pdf";
 
             RestClient client = new RestClient("http://localhost:4040/api/tunnels");
