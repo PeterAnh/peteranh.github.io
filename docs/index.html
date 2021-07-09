@@ -20,6 +20,9 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
 
+	<!-- Add jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head> 
 
 <body>
@@ -245,24 +248,25 @@
 				</footer>
 				
 			</div><!--//main-wrapper-->
+
+			<script>
+				$("footer").hide();
+				$("#banner").hide();
+				$("article").bind('mouseover', function () {
+					var footer = $("footer");
+					if (footer.css("display") == "none") {
+						footer.show();
+						console.log("showing footer");
+					}
+				});
+				$("div.main-wrapper").bind('mouseover', function () {
+					var banner = $("#banner");
+					if (banner.css("display") == "none") {
+						banner.show();
+						console.log("showing banner");
+					}
+				});
+			</script>
 </body>
-<script>
-	$("footer").hide();
-	$("#banner").hide();
-	$("article").bind('mouseover', function () {
-		var footer = $("footer");
-		if (footer.css("display") == "none") {
-			footer.show();
-			console.log("showing footer");
-		}
-	});
-	$("div.main-wrapper").bind('mouseover', function () {
-		var banner = $("#banner");
-		if (banner.css("display") == "none") {
-			banner.show();
-			console.log("showing banner");
-		}
-	});
-</script>
 </html> 
 
