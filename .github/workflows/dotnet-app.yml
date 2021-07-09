@@ -1,4 +1,4 @@
-name: .NET
+name: Deploy latest PDF
 
 on:
   workflow_dispatch:
